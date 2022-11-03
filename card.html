@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Airtable Card</title>
+
+    <style>
+      body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      #firstdiv {
+        background-color: rgb(248, 234, 155);
+        padding: 10px 40px 40px 30px;
+        margin: 20px;
+        border-radius: 10px;
+        width: fit-content;
+      }
+      #underlined {
+        border-bottom: 2px dotted black;
+      }
+      #selecting {
+        background-color: rgb(252, 236, 144);
+        border: none;
+        font-size: 12px;
+      }
+      button {
+        height: 50px;
+        width: 150px;
+        border-radius: 50px;
+        border: 1px solid black;
+      }
+      #unique > * {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="firstdiv">
+      <h3>Plus</h3>
+      <p>
+        For teams looking to create connected <br />
+        apps to manage their own workflows
+      </p>
+
+      <div id="unique">
+        <h1 style="font-size:40px;">$10</h1>
+        <p>
+          per seat/month <br />
+          billed annually
+        </p>
+      </div>
+
+      <button>Try for free</button>
+      <p>
+        Everything in Free, plus:<br /><br />
+        3 <span id="underlined">extensions</span> per base <br />
+        3 sync integrations <br />
+        5,000 records per base <br />
+        5GB of attachments per base <br />
+        Custom branded forms <br />
+        6-month revision & snapshot history <br />
+        Automatic table syncing
+      </p>
+      <br />
+      <form action="">
+        <select name="" id="selecting">
+          <option value="">ALL FEATURES</option>
+        </select>
+      </form>
+    </div>
+  </body>
+</html>
