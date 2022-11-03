@@ -4,72 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sample Airtable Card</title>
+    <title>Sample HTML Card</title>
 
     <style>
       body {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: bold;
       }
       #firstdiv {
-        background-color: rgb(248, 234, 155);
-        padding: 10px 40px 40px 30px;
+        background-color: rgb(250, 227, 184);
+        padding: 10px 20px 40px 20px;
         margin: 20px;
-        border-radius: 10px;
-        width: fit-content;
+        border-radius: 15px;
+        width: 250px;
+        font-size: 15px;
+        line-height: 22px;
       }
       #underlined {
         border-bottom: 2px dotted black;
       }
-      #selecting {
-        background-color: rgb(252, 236, 144);
-        border: none;
-        font-size: 12px;
-      }
       button {
         height: 50px;
-        width: 150px;
+        width: 100%;
         border-radius: 50px;
         border: 1px solid black;
+        font-size: 15px;
       }
       #unique > * {
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 15px;
+        margin-bottom: -10px;
+      }
+      ul {
+        margin-left: 0px;
+        padding-left: 18px;
+        list-style: none;
+      }
+      ul li::before {
+        content: "\2714\0020";
+        margin-right: 7px;
+        margin-left: -15px;
       }
     </style>
   </head>
+
   <body>
     <div id="firstdiv">
-      <h3>Plus</h3>
-      <p>
-        For teams looking to create connected <br />
-        apps to manage their own workflows
-      </p>
+      <section style="font-size: larger">
+        <h3>Plus</h3>
+        <p>
+          For teams looking to create <br />
+          connected apps to manage <br />
+          their own workflows
+        </p>
+      </section>
+      <br /><br />
 
       <div id="unique">
-        <h1 style="font-size:40px;">$10</h1>
+        <h1 style="font-size: 50px; letter-spacing: -8px">$10</h1>
         <p>
-          per seat/month <br />
+          per seat /month <br />
           billed annually
         </p>
       </div>
 
-      <button>Try for free</button>
-      <p>
-        Everything in Free, plus:<br /><br />
-        3 <span id="underlined">extensions</span> per base <br />
-        3 sync integrations <br />
-        5,000 records per base <br />
-        5GB of attachments per base <br />
-        Custom branded forms <br />
-        6-month revision & snapshot history <br />
-        Automatic table syncing
-      </p>
+      <p>$12 billed monthly</p>
+      <button><b>Try for free</b></button>
+      <p>Everything in Free, plus:</p>
+
+      <ul>
+        <li>3 <span id="underlined">extensions</span> per base</li>
+        <li>3 sync integrations</li>
+        <li>5,000 records per base</li>
+        <li>5GB of attachments per base</li>
+        <li>Custom branded forms</li>
+        <li>6-month revision & snapshot &nbsp;&nbsp;history</li>
+        <li>Automatic table syncing</li>
+      </ul>
       <br />
-      <form action="">
-        <select name="" id="selecting">
-          <option value="">ALL FEATURES</option>
-        </select>
-      </form>
+      
     </div>
   </body>
 </html>
